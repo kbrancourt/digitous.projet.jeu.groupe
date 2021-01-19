@@ -1,30 +1,35 @@
 body{
     margin: 0 auto;
    background: url("../images/the-road-815297_1920.jpg");
+   
 }
 p{
     font-family: 'Oswald', sans-serif;
     font-weight:lighter;
 }
-/* .row{
-    border: 2px solid black;
-} */
+
+
+.nav-open nav {
+    background: rgba(0, 0, 0, 1);
+}
+
 header{
     font-family: 'Courgette', sans-serif; 
 }
 .navbar{
-    background: white;
+    background: rgba(255, 255, 255, 0.462);
+
 }
 .navbar-brand{
     font-size: 25px;
 }
 .logo{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height:50px;
 }
-/* .fa-1x {
+.fa-1x {
     font-size: 1.5rem;
-} */
+} 
 .navbar-toggler.toggler-example {
     cursor: pointer;
     
@@ -33,17 +38,17 @@ header{
 nav li{
     font-family: 'Oswald', sans-serif;
     list-style: none;
+    color: white;
 }
 .nav-link{
     text-decoration: none;
-    color: black;
+    color: white;
     
 }
 
 
 /* compteur et cartes*/
 #countdown{
-    /* border: 2px solid black; */
     height: 50px;
     margin: 16px;
     padding: 16px;
@@ -51,9 +56,11 @@ nav li{
     display: flex;
     justify-content: flex-start;
 }
-strong{
+strong, #countdown_minutes,#countdown_seconds{
     font-size: 20px;
-
+    border: 2px solid white;
+    width: 110px;
+    text-align: center;
 }
 /* #cards-game{
     border: 2px solid red;
@@ -78,4 +85,17 @@ strong{
     margin: 8px;
     background: rgba(255, 255, 255, 0.619);
     
+}
+
+.backCard img{
+    display: block;
+    width: 100px;
+    height: 120px;
+    border-radius: 10%;
+}
+.faceCard img{
+    display: none;
+    width: 100px;
+    height: 120px;
+    border-radius: 10%;
 }
