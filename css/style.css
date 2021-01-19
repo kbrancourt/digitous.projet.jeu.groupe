@@ -1,0 +1,81 @@
+body{
+    margin: 0 auto;
+   background: url("../images/the-road-815297_1920.jpg");
+}
+p{
+    font-family: 'Oswald', sans-serif;
+    font-weight:lighter;
+}
+/* .row{
+    border: 2px solid black;
+} */
+header{
+    font-family: 'Courgette', sans-serif; 
+}
+.navbar{
+    background: white;
+}
+.navbar-brand{
+    font-size: 25px;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+/* .fa-1x {
+    font-size: 1.5rem;
+} */
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+    
+}
+
+nav li{
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+/* compteur et cartes*/
+#countdown{
+    /* border: 2px solid black; */
+    height: 50px;
+    margin: 16px;
+    padding: 16px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+strong{
+    font-size: 20px;
+
+}
+/* #cards-game{
+    border: 2px solid red;
+} */
+
+.col-12{
+    display: flex;
+    justify-content: center ;
+}
+.col-6{
+    border: 3px solid white;
+    border-radius: 10%;
+    margin: 8px;
+    width: 100px;
+    height: 120px;
+}
+
+#play, #level,#cards-number{
+    border: 3px solid white;
+    border-radius: 10%;
+    padding: 8px;
+    margin: 8px;
+    background: rgba(255, 255, 255, 0.619);
+    
+}
