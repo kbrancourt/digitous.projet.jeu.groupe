@@ -1,3 +1,4 @@
+
 var images = ["désert.jpg","forêt.jpg","plage.jpg","Levée-soleil.jpg"];
 
 
@@ -51,3 +52,5 @@ $(document).ready(function(){
 //if(class photo2 === class photo3{
   // $(".photo2").css ("display", "block")
  //})
+
+
