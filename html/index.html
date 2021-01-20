@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
+​
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeu Mémory</title>
-    <link rel="stylesheet" href="../css/bootstrap.css"/>
-    <link rel="stylesheet" href="../css/all.css"/>
-    <link rel="stylesheet" href="../css/style.css"/>
-    <link rel="stylesheet" href="../js/bootstrap.js"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../js/bootstrap.js" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
 </head>
-
-
+​
+​
 <body>
-
+​
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="../images/Logo.png" class="logo"/></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-              aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="../images/Logo.png" class="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"><span class="sr-only"></span>Accueil</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Thèmes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">HTML</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CSS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Javascript</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">JQuery</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><span class="sr-only"></span>Accueil</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Thèmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Javascript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">JQuery</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
+        </nav>
     </header>
     <div class="container">
-        
+​
         <div class="row">
             <!-- compteur pour le temps -->
             <div class="col-12 compteur" id="countdown">
@@ -57,62 +57,62 @@
                 <!-- temps en secontes -->
                 <span id="countdown_seconds"> --s</span>
             </div>
-
+​
             <div class="row" id="cards-game">
                 <div class="col-12">
                     <div class="col-6">
-                        <div class="backCard" >
+                        <div class="backCard">
                             <img src="../images/winter-landscape-2571788_1280.webp" id="backCard-1" alt="">
-                        </div>   
+                        </div>
                         <div class="faceCard">
-                            <img src="../images/forêt.jpg" id="faceCard-1"  class="photo-1" alt="">
-                        </div>   
+                            <img src="../images/forêt.jpg" class="photo-1" id="faceCard-1" alt="">
+                        </div>
                     </div>
                     <div class="col-6">
                         <div class="backCard">
-                            <img src="../images/winter-landscape-2571788_1280.webp" alt="">
-
-                        </div>   
+                            <img src="../images/winter-landscape-2571788_1280.webp" id="backCard-2" valt="">
+​
+                        </div>
                         <div class="faceCard">
-                            <img src="../images/plage.jpg" alt="">
-                        </div>   
+                            <img src="../images/plage.jpg" class="photo-2" id="faceCard-2" alt="">
+                        </div>
                     </div>
                     <div class="col-6">
                         <div class="backCard">
-                            <img src="../images/winter-landscape-2571788_1280.webp"alt="">
-
-                        </div>  
+                            <img src="../images/winter-landscape-2571788_1280.webp" id="backCard-3" alt="">
+​
+                        </div>
                         <div class="faceCard">
-                            <img src="../images/Levée-soleil.jpg" alt="">
-                        </div>  
+                            <img src="../images/Levée-soleil.jpg" class="photo-3" id="faceCard-3" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="col-6">
                         <div class="backCard">
-                            <img src="../images/winter-landscape-2571788_1280.webp" alt="">
-                        </div>   
+                            <img src="../images/winter-landscape-2571788_1280.webp" id="backCard-4" alt="">
+                        </div>
                         <div class="faceCard">
-                            <img src="../images/Levée-soleil.jpg" alt="">
-                        </div>   
+                            <img src="../images/Levée-soleil.jpg" class="photo-3" id="faceCard-4" alt="">
+                        </div>
                     </div>
                     <div class="col-6">
                         <div class="backCard">
-                            <img src="../images/winter-landscape-2571788_1280.webp" alt="">
-                        </div>   
+                            <img src="../images/winter-landscape-2571788_1280.webp" id="backCard-5" alt="">
+                        </div>
                         <div class="faceCard">
-                            <img src="../images/forêt.jpg" class="photo-1" alt="">
-                        </div>   
+                            <img src="../images/forêt.jpg" class="photo-1" id="faceCard-5" alt="">
+                        </div>
                     </div>
                     <div class="col-6">
                         <div class="backCard">
-                            <img src="../images/winter-landscape-2571788_1280.webp" alt="">
-                        </div>   
+                            <img src="../images/winter-landscape-2571788_1280.webp" id="backCard-6" alt="">
+                        </div>
                         <div class="faceCard">
-                            <img src="../images/plage.jpg" alt="">
-                        </div>   
+                            <img src="../images/plage.jpg" class="photo-2" id="faceCard-6" alt="">
+                        </div>
                     </div>
-                    
+​
                 </div>
                 <!-- <div class="col-12">
                     <div class="col-6">
@@ -139,32 +139,33 @@
                             <img src="../images/montagne.webp" alt="">
                         </div>   
                     </div> -->
-                </div>
-
             </div>
-            <div class="col-12" id="btn">
-                <button id="play">Jouer</button>
-                <button id="cards-number">Nombre de cartes</button>
-                <button id="level">Niveau de difficultés</button>
-            </div>
+​
         </div>
-        <div class="row">
-            <div class="col-12" id="HTML">
-
-            </div>
-            <div class="col-12" id="CSS">
-
-            </div>
-            <div class="col-12" id="#Javascript">
-
-            </div>
-            <div class="col-12" id="JQuéry">
-
-            </div>
+        <div class="col-12" id="btn">
+            <button id="play">Jouer</button>
+            <button id="cards-number">Nombre de cartes</button>
+            <button id="level">Niveau de difficultés</button>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-12" id="HTML">
+​
+        </div>
+        <div class="col-12" id="CSS">
+​
+        </div>
+        <div class="col-12" id="#Javascript">
+​
+        </div>
+        <div class="col-12" id="JQuéry">
+​
+        </div>
+    </div>
+    </div>
+​
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
+​
 </html>
