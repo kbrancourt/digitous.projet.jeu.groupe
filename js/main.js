@@ -30,72 +30,74 @@ function essaie() {
     }
 }
 $(document).ready(function() {
-    console.log("backCard")
+    console.log("backCard");
+
+    userClick1()
+}) 
+    //si je clique 2 fois et que card 5 = card 1
+    // if (click === 2 && ($("#faceCard-5").css("display") === "block") && ($("#faceCard-1").css("display") === "block")) {
+    //     $("#faceCard-1").css("display", "block");
+    //     $("#faceCard-5").css("display", "block");
+        
+    // } //else{
+    // //      $("#faceCard-1").css("display", "none") ;
+    // //      $("#faceCard-5").css("display", "none");
+       
+    // // }
+    // console.log("recommencez");
+  
+//      if (click === 2 && ($("#faceCard-6").css("display") === "block") && ($("#faceCard-2").css("display") === "block")) {
+//          $("#faceCard-2").css("display", "block");
+//          $("#faceCard-6").css("display", "block");
+//          console.log("ok")
+//      } else if(click>3){
+//          $("#backCard-3").attr("display", "none");
+//          $("#backCard-4").attr("display", "none");
+//          console.log("recommencez")
+//      }
+
+//})
+
     $("#backCard-1").click(function() {
         userClick1(1)
-        if (click == 2) {
-            if ($("#faceCard-5").css("display") == "block") {
-                $("#faceCard-1").css("display", "block");
-                $("#faceCard-5").css("display", "block");
-                console.log("ok")
-            } else {
-                console.log("test")
-                for (i = 1; i <= 6; i++) {
-                    $(`#backCard-${i}`).css("display", "block");
-                    click = 0
-                    console.log("non")
-                }
-            }
+        if (click === 2 && ($("#faceCard-5").css("display") === "block") && ($("#faceCard-1").css("display") === "block")) {
+            $("#faceCard-1").css("display", "block");
+            $("#faceCard-5").css("display", "block");
         }
-    })
+    });
 
 
     $("#backCard-2").click(function() {
         userClick1(2)
-        if (click == 2) {
-            if ($("#faceCard-6").css("display") == "block") {
-                $("#faceCard-2").css("display", "block");
-                $("#faceCard-6").css("display", "block");
-                console.log("ok")
-                click = 0;
-            }
+        if (click === 2 && ($("#faceCard-6").css("display") === "block") && ($("#faceCard-2").css("display") === "block")) {
+            $("#faceCard-2").css("display", "block")
+            $("#faceCard-6").css("display", "block")
         }
     })
 
 
     $("#backCard-3").click(function() {
         userClick1(3)
-        if (click == 2) {
-            if ($("#faceCard-4").css("display") == "block") {
-                $("#faceCard-3").css("display", "block");
-                $("#faceCard-4").css("display", "block");
-                console.log("ok")
-                click = 0;
-            }
+        if (click === 2 && ($("#faceCard-3").css("display") === "block") && ($("#faceCard-4").css("display") === "block")) {
+            $("#faceCard-1").css("display", "block");
+            $("#faceCard-5").css("display", "block");
         }
     })
+
     $("#backCard-4").click(function() {
         userClick1(4)
-            //f (click == 2) {
-            //   if ($("#faceCard-3").css("display") == "block") {
-            //       $("#faceCard-4").css("display", "block");
-            //       $("#faceCard-3").css("display", "block");
-            //       console.log("ok")
-            //       click = 0;
-            //   }
-            //
+        if (click === 2 && ($("#faceCard-3").css("display") === "block") && ($("#faceCard-4").css("display") === "block")) {
+            $("#faceCard-1").css("display", "block");
+            $("#faceCard-5").css("display", "block");
+        }
     })
+
     $("#backCard-5").click(function() {
         userClick1(5)
-            //if (click == 2) {
-            //    if ($("#faceCard-1").css("display") == "block") {
-            //        $("#faceCard-5").css("display", "block");
-            //        console.log("yes")
-            //        $("#faceCard-1").css("display", "block");
-            //        console.log("ok")
-            //        click = 0;
-            //    }
-            //}
+        if (click === 2 && ($("#faceCard-5").css("display") === "block") && ($("#faceCard-1").css("display") === "block")) {
+            $("#faceCard-1").css("display", "block");
+            $("#faceCard-5").css("display", "block");
+        }
     })
 
 
@@ -103,5 +105,8 @@ $(document).ready(function() {
 
     $("#backCard-6").click(function() {
         userClick1(6)
+        if (click === 2 && ($("#faceCard-6").css("display") === "block") && ($("#faceCard-2").css("display") === "block")) {
+            $("#faceCard-2").css("display", "block");
+            $("#faceCard-6").css("display", "block");
+        }
     })
-})
