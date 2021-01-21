@@ -1,24 +1,8 @@
-//mahmoudou
-// $(document).ready(function(){
-//     //qd je clique sur l'arrière d'une carte
-//     function userClick(){
-//       $(".backCard").click({
-//         //la photo apparait et disparait qd la souris n'est plus dessus
-//         function(){
-//             $("#backCard-1").css("display", "none");  
-//           },
-//         function(){
-//             $("#faceCard-1").css("display", "block");
-//           }, 
-//     })
-//     }
-// })
-// userClick()
-// ahmed
+
 
 
 var click = 0;
-
+var score = 0;
 function userClick1(n) {
     $(`#faceCard-${n}`).css("display", "block");
     $(`#backCard-${n}`).css("display", "none");
@@ -28,13 +12,21 @@ function userClick1(n) {
 
 
 $(document).ready(function () {
+    $('#play').click(function() {
+        location.reload();
+    });
     $("#backCard-1").click(function () {
         userClick1(1)
         if (click === 2 && ($("#faceCard-5").css("display") === "block") && ($("#faceCard-1").css("display") === "block")) {
             $("#faceCard-1").css("display", "block");
             $("#faceCard-5").css("display", "block");
             console.log("ok1");
+
+            score++;
+            $("#score").html(score); //<b>Score :</b>
+
             click = 0
+            console.log("score", score)
 
         }
         if (click === 2 && ($("#faceCard-2").css("display") === "block") && ($("#faceCard-1").css("display") === "block")) {
@@ -43,13 +35,13 @@ $(document).ready(function () {
             // $("#faceCard-2").css("display", "none");
 
             $("#backCard-1").css("display", "block");
-             $("#backCard-2").css("display", "block");
+            $("#backCard-2").css("display", "block");
 
             // $("#backCard-1").animate({display: "block"}, 2000)
             // $("#backCard-2").animate({display: "block"}, 2000)
-                
-            $("#faceCard-1").animate({ display: "none"}, 2000);
-            $("#faceCard-2").animate({display: "none"}, 2000);
+
+            $("#faceCard-1").animate({ display: "none" }, 2000);
+            $("#faceCard-2").animate({ display: "none" }, 2000);
             console.log("no");
             click = 0
 
@@ -63,7 +55,12 @@ $(document).ready(function () {
             $("#faceCard-2").css("display", "block")
             $("#faceCard-6").css("display", "block")
             console.log("ok2");
+
+            score++;
+            $("#score").html(score); //<b>Score :</b>
+
             click = 0
+            console.log("score", score)
 
 
         }
@@ -73,17 +70,17 @@ $(document).ready(function () {
             // $("#faceCard-1").css("display", "none");
             // $("#faceCard-2").css("display", "none");
 
-             $("#backCard-1").css("display", "block");
-             $("#backCard-2").css("display", "block");
-            
-           
+            $("#backCard-1").css("display", "block");
+            $("#backCard-2").css("display", "block");
+
+
             // $("#backCard-1").animate({ display: "block"}, 2000);
             // $("#backCard-2").animate({display: "block"}, 2000);
 
-            $("#faceCard-1").animate({ display: "none"}, 2000);
-            $("#faceCard-2").animate({display: "none"}, 2000);
-                
-            
+            $("#faceCard-1").animate({ display: "none" }, 2000);
+            $("#faceCard-2").animate({ display: "none" }, 2000);
+
+
             console.log("no");
             click = 0
 
@@ -97,7 +94,12 @@ $(document).ready(function () {
             $("#faceCard-4").css("display", "block");
             $("#faceCard-3").css("display", "block");
             console.log("ok3");
+
+            score++;
+            $("#score").html(score); //<b>Score :</b>
+
             click = 0
+            console.log("score", score)
 
 
         }
@@ -110,7 +112,12 @@ $(document).ready(function () {
             $("#faceCard-3").css("display", "block");
             $("#faceCard-4").css("display", "block");
             console.log("ok3");
+            score++;
+            $("#score").html(score); //<b>Score :</b>
+
             click = 0
+
+            console.log("score", score)
 
 
         }
@@ -123,7 +130,12 @@ $(document).ready(function () {
             $("#faceCard-1").css("display", "block");
             $("#faceCard-5").css("display", "block");
             console.log("ok1");
+            score++;
+            $("#score").html(score); //<b>Score :</b>
+
             click = 0
+
+            console.log("score", score)
 
 
         }
@@ -135,8 +147,12 @@ $(document).ready(function () {
             $("#faceCard-2").css("display", "block");
             $("#faceCard-6").css("display", "block");
             console.log("ok2");
-            count = 0
+            score++;
+            $("#score").html(score); //<b>Score :</b>
 
+            click = 0
+
+            console.log("score", score)
 
         }
     })
