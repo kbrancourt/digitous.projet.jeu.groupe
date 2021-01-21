@@ -15,6 +15,8 @@
 // })
 // userClick()
 // ahmed
+
+
 var click = 0;
 
 function userClick1(n) {
@@ -24,11 +26,7 @@ function userClick1(n) {
     console.log("click", click)
 }
 
-function essaie() {
-    for (i = 1; i <= 6; i++) {
-        userClick1(i)
-    }
-}
+
 $(document).ready(function() {
         $("#backCard-1").click(function() {
             userClick1(1)
@@ -36,6 +34,17 @@ $(document).ready(function() {
                 $("#faceCard-1").css("display", "block");
                 $("#faceCard-5").css("display", "block");
                 console.log("ok1");
+                click = 0
+
+            }
+            if(click === 2 && ($("#faceCard-2").css("display") === "block") && ($("#faceCard-1").css("display") === "block")){
+
+                // $("#faceCard-1").css("display", "none");
+                // $("#faceCard-2").css("display", "none");
+
+                $("#backCard-1").css("display", "block");
+                $("#backCard-2").css("display", "block");
+                console.log("no");
                 click = 0
 
             }
@@ -50,6 +59,18 @@ $(document).ready(function() {
                 console.log("ok2");
                 click = 0
 
+
+            }
+
+            if(click === 2 && ($("#faceCard-2").css("display") === "block") && ($("#faceCard-1").css("display") === "block")){
+
+                // $("#faceCard-1").css("display", "none");
+                // $("#faceCard-2").css("display", "none");
+
+                $("#backCard-1").css("display", "block");
+                $("#backCard-2").css("display", "block");
+                console.log("no");
+                click = 0
 
             }
         })
@@ -67,6 +88,7 @@ $(document).ready(function() {
             }
         })
 
+
         $("#backCard-4").click(function() {
             userClick1(4)
             if (click === 2 && ($("#faceCard-3").css("display") === "block") && ($("#faceCard-4").css("display") === "block")) {
@@ -78,6 +100,7 @@ $(document).ready(function() {
 
             }
         })
+
 
         $("#backCard-5").click(function() {
             userClick1(5)
