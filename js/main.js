@@ -34,12 +34,12 @@ $(document).ready(function() {
     $("#backCard-1").click(function() {
         userClick1(1)
         if (click == 2) {
-            if ($("#faceCard-5").attr("display") == "block") {
+            if ($("#faceCard-5").css("display") == "block") {
                 $("#faceCard-1").css("display", "block");
                 $("#faceCard-5").css("display", "block");
                 console.log("ok")
-                click = 0;
             } else {
+                console.log("test")
                 for (i = 1; i <= 6; i++) {
                     $(`#backCard-${i}`).css("display", "block");
                     click = 0
@@ -48,18 +48,59 @@ $(document).ready(function() {
             }
         }
     })
+
+
     $("#backCard-2").click(function() {
         userClick1(2)
+        if (click == 2) {
+            if ($("#faceCard-6").css("display") == "block") {
+                $("#faceCard-2").css("display", "block");
+                $("#faceCard-6").css("display", "block");
+                console.log("ok")
+                click = 0;
+            }
+        }
     })
+
+
     $("#backCard-3").click(function() {
         userClick1(3)
+        if (click == 2) {
+            if ($("#faceCard-4").css("display") == "block") {
+                $("#faceCard-3").css("display", "block");
+                $("#faceCard-4").css("display", "block");
+                console.log("ok")
+                click = 0;
+            }
+        }
     })
     $("#backCard-4").click(function() {
         userClick1(4)
+            //f (click == 2) {
+            //   if ($("#faceCard-3").css("display") == "block") {
+            //       $("#faceCard-4").css("display", "block");
+            //       $("#faceCard-3").css("display", "block");
+            //       console.log("ok")
+            //       click = 0;
+            //   }
+            //
     })
     $("#backCard-5").click(function() {
         userClick1(5)
+            //if (click == 2) {
+            //    if ($("#faceCard-1").css("display") == "block") {
+            //        $("#faceCard-5").css("display", "block");
+            //        console.log("yes")
+            //        $("#faceCard-1").css("display", "block");
+            //        console.log("ok")
+            //        click = 0;
+            //    }
+            //}
     })
+
+
+
+
     $("#backCard-6").click(function() {
         userClick1(6)
     })
