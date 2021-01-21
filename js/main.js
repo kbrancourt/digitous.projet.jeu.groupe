@@ -42,14 +42,14 @@ $(document).ready(function () {
             // $("#faceCard-1").css("display", "none");
             // $("#faceCard-2").css("display", "none");
 
-            /* $("#backCard-1").css("display", "block");
-             $("#backCard-2").css("display", "block");*/
-            $("#backCard-1").animate({display: "block"}, 2000)
-            $("#backCard-2").animate({display: "block"}, 2000)
+            $("#backCard-1").css("display", "block");
+             $("#backCard-2").css("display", "block");
+
+            // $("#backCard-1").animate({display: "block"}, 2000)
+            // $("#backCard-2").animate({display: "block"}, 2000)
                 
-            
-            $("#facecard-1").animate({ display: "none"}, 2000);
-            $("#facecard-2").animate({display: "none"}, 2000);
+            $("#faceCard-1").animate({ display: "none"}, 2000);
+            $("#faceCard-2").animate({display: "none"}, 2000);
             console.log("no");
             click = 0
 
@@ -73,15 +73,15 @@ $(document).ready(function () {
             // $("#faceCard-1").css("display", "none");
             // $("#faceCard-2").css("display", "none");
 
-            /* $("#backCard-1").css("display", "block");
+             $("#backCard-1").css("display", "block");
              $("#backCard-2").css("display", "block");
-             console.log("no");
-             click = 0*/
-            $("#backCard-1").animate({ display: "block"}, 2000);
-            $("#backCard-2").animate({display: "block"}, 2000);
+            
+           
+            // $("#backCard-1").animate({ display: "block"}, 2000);
+            // $("#backCard-2").animate({display: "block"}, 2000);
 
-            $("#facecard-1").animate({ display: "none"}, 2000);
-            $("#facecard-2").animate({display: "none"}, 2000);
+            $("#faceCard-1").animate({ display: "none"}, 2000);
+            $("#faceCard-2").animate({display: "none"}, 2000);
                 
             
             console.log("no");
@@ -128,9 +128,6 @@ $(document).ready(function () {
 
         }
     })
-
-
-
 
     $("#backCard-6").click(function () {
         userClick1(6)
