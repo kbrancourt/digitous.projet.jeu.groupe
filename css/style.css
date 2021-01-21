@@ -37,7 +37,7 @@ header {
     cursor: pointer;
 }
 
-nav li {
+nav li , h1{
     font-family: 'Oswald', sans-serif;
     list-style: none;
     color: white;
@@ -47,32 +47,6 @@ nav li {
     text-decoration: none;
     color: white;
 }
-
-
-/* compteur et cartes*/
-
-#countdown {
-    height: 50px;
-    margin: 16px;
-    padding: 16px;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-}
-
-strong,
-#countdown_minutes,
-#countdown_seconds {
-    font-size: 20px;
-    border: 2px solid white;
-    width: 110px;
-    text-align: center;
-}
-
-
-/* #cards-game{
-    border: 2px solid red;
-} */
 
 .col-12 {
     display: flex;
@@ -87,16 +61,26 @@ strong,
     height: 120px;
 }
 
+#btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 50px;
+}
 #play,
-#level,
-#cards-number {
+#score {
     border: 3px solid white;
     border-radius: 10%;
     padding: 8px;
     margin: 8px;
     background: rgba(255, 255, 255, 0.619);
+    
 }
-
+#cards-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .backCard img {
     display: block;
     width: 100px;

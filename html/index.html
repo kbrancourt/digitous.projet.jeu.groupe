@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/all.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../js/bootstrap.js" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 ​ ​
 
@@ -19,29 +17,24 @@
     ​
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="../images/Logo.png" class="logo" /></a>
+            <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
+                <h1 class="d-flex text-center">Mémory Game</h1>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"><span class="sr-only"></span>Accueil</span></a>
+                        <a class="nav-link" href="#"><span class="sr-only"></span></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Thèmes</a>
+                        <a class="nav-link" href="./index.html">HTML</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">HTML</a>
+                        <a class="nav-link" href="../css/style.css">CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CSS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Javascript</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">JQuery</a>
+                        <a class="nav-link" href="../js/main.js">Javascript</a>
                     </li>
                 </ul>
             </div>
@@ -50,14 +43,13 @@
     <div class="container">
         ​
         <div class="row">
-            <!-- compteur pour le temps -->
-            <div class="col-12 compteur" id="countdown">
-                <strong>Temps restant: </strong>
-                <!-- temps en minutes -->
-                <span id="countdown_minutes">-- mn </span>
-                <!-- temps en secontes -->
-                <span id="countdown_seconds"> --s</span>
+            <div class="col-12" id="btn">
+                <button id="play">Jouer</button>
             </div>
+            <div class="col-12" id="btn">
+                <button id="score">Score</button>
+            </div>
+        
             ​
             <div class="row" id="cards-game">
                 <div class="col-12">
@@ -120,57 +112,13 @@
                     ​
                 </div>
             </div>
-            <!-- <div class="col-12">
-                    <div class="col-6">
-                        <div class="backCard">
-                            <img src="../images/the-road-815297_1920.jpg" alt="">
-                        </div>   
-                        <div class="faceCard">
-                            <img src="../images/plage.jpg" alt="">
-                        </div>   
-                    </div>
-                    <div class="col-6">
-                        <div class="backCard">
-                            <img src="../images/the-road-815297_1920.jpg"  alt="">
-                        </div>   
-                        <div class="faceCard">
-                            <img src="" alt="">
-                        </div>   
-                    </div>
-                    <div class="col-6">
-                        <div class="backCard">
-                            <img src="../images/the-road-815297_1920.jpg" alt="">
-                        </div>   
-                        <div class="">
-                            <img src="../images/montagne.webp" alt="">
-                        </div>   
-                    </div> -->
+           
         </div>
-        ​
-    </div>
-    <div class="col-12" id="btn">
-        <button id="play">Jouer</button>
-        <button id="score">SCORE</button>
-        
-    </div>
-    </div>
-    <div class="row">
-        <div class="col-12" id="HTML">
-            ​
-        </div>
-        <div class="col-12" id="CSS">
-            ​
-        </div>
-        <div class="col-12" id="#Javascript">
-            ​
-        </div>
-        <div class="col-12" id="JQuéry">
-            ​
-        </div>
-    </div>
+    
     </div>
     ​
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
     <script src="../js/main.js"></script>
 </body>
 ​
