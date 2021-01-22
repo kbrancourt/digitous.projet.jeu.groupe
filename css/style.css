@@ -17,6 +17,13 @@ header p{
 ul{
     padding-bottom: 16px;
 }
+.size{
+    width: 200px;
+    height: 50px;
+    color: black;
+    font-weight: bolder;
+    font-size: xx-large;
+}
 body {
     margin: 0 auto;
     background: url("../images/the-road-815297_1920.jpg");
