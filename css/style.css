@@ -1,3 +1,22 @@
+header{
+    text-align: center;
+}
+header p{
+    font-family: 'Indie Flower', cursive;
+    font-size:  120px;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+        position: absolute;
+        left: 450px;
+        top: 0px; 
+}
+.flex{
+    display: flex;
+}
+ul{
+    padding-bottom: 16px;
+}
 body {
     margin: 0 auto;
     background: url("../images/the-road-815297_1920.jpg");
@@ -17,7 +36,6 @@ header {
 }
 
 .navbar {
-    background: rgba(255, 255, 255, 0.462);
 }
 
 .navbar-brand {
@@ -80,6 +98,7 @@ nav li , h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 32px;
 }
 .backCard img {
     display: block;
