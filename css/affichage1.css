@@ -1,0 +1,115 @@
+header{
+    text-align: center;
+}
+header p{
+    font-family: 'Indie Flower', cursive;
+    font-size:  120px;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+        position: absolute;
+        left: 450px;
+        top: 0px; 
+}
+.flex{
+    display: flex;
+}
+ul{
+    padding-bottom: 16px;
+}
+body {
+    margin: 0 auto;
+    background: url("../images/Levée-soleil.jpg");
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+}
+
+.nav-open nav {
+    background: rgba(0, 0, 0, 1);
+}
+
+header {
+    font-family: 'Courgette', sans-serif;
+}
+
+.navbar {
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+
+nav li , h1{
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+    color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.col-12 {
+    display: flex;
+    justify-content: center;
+}
+
+.col-6 {
+    border: 3px solid white;
+    border-radius: 10%;
+    margin: 8px;
+    width: 100px;
+    height: 120px;
+}
+
+#btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 50px;
+}
+#play,
+#score {
+    border: 3px solid white;
+    border-radius: 10%;
+    padding: 8px;
+    margin: 8px;
+    background: rgba(255, 255, 255, 0.619);
+    
+}
+#cards-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.backCard img {
+    display: block;
+    width: 100px;
+    height: 120px;
+    border-radius: 10%;
+}
+
+.faceCard img {
+    display: none;
+    width: 100px;
+    height: 120px;
+    border-radius: 10%;
+}
